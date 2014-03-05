@@ -13,7 +13,7 @@ import static org.junit.Assert.assertThat;
 public class MainActivityTest {
 
     @Test
-    public void shouldHaveHappySmiles() throws Exception {
+    public void testASDF() throws Exception {
         String hello = new MainActivity().getResources().getString(R.string.app_name);
         assertThat(hello, equalTo("RoadTripBG"));
     }
