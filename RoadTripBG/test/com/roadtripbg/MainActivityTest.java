@@ -1,6 +1,6 @@
 package com.roadtripbg;
 
-import com.roadtripbg.MainActivity;
+import com.roadtripbg.activities.MainActivity;
 import com.roadtripbg.R;
 import org.robolectric.RobolectricTestRunner;
 import org.junit.Test;

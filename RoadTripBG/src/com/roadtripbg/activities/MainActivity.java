@@ -1,12 +1,14 @@
-package com.roadtripbg;
+package com.roadtripbg.activities;
 
+import android.app.Activity;
+import android.os.Bundle;
+import android.view.Menu;
+import android.widget.TextView;
 import butterknife.ButterKnife;
 import butterknife.InjectView;
 import butterknife.OnClick;
-import android.os.Bundle;
-import android.app.Activity;
-import android.view.Menu;
-import android.widget.TextView;
+
+import com.roadtripbg.R;
 
 public class MainActivity extends Activity {
 	

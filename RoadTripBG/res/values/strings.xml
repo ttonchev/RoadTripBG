@@ -4,5 +4,16 @@
     <string name="app_name">RoadTripBG</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
-
+	<string name="from">От:</string>
+	<string name="to">До:</string>
+	<string name="date">Дата:</string>
+	<string name="type">Тип:</string>
+	<string name="seats">Брой места</string>
+	<string name="make">Марка/Модел:</string>
+	<string name="smoker">В колата не се пуши</string>
+	<string name="price">Цена:</string>
+	<string name="share">Цената се дели</string>
+	<string name="newTrip">Нова обява</string>
+	<string name="search">Търсене</string>
+	<string name="pleaceChoose">Моля изберете</string>
 </resources>
