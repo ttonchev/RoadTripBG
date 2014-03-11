@@ -18,6 +18,7 @@ import butterknife.InjectView;
 import butterknife.OnClick;
 
 import com.roadtripbg.R;
+import com.roadtripbg.listadapters.CityListAdapter;
 
 public class SearchActivity extends FragmentActivity {
 
@@ -26,12 +27,15 @@ public class SearchActivity extends FragmentActivity {
 	@InjectView(R.id.dateId)
 	TextView date;
 
+    private CityListAdapter mAdapter;
 
 
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.search_layout);
 		ButterKnife.inject(this);
+		
+		//TODO: Figure out how to populate the lister view
 
 	}
 

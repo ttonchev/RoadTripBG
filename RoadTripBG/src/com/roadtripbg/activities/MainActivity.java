@@ -14,6 +14,8 @@ public class MainActivity extends Activity {
 	
 	@InjectView(R.id.potka) TextView text;
 
+	private RoadTrip api;
+	
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,4 +35,15 @@ public class MainActivity extends Activity {
         return true;
     }
     
+    
+    public RoadTrip getApi() {
+    	if (api == null) {
+    		api = RoadTripService.getService();
+    	}
+        return api;
+    }
+    
+    public void setApi(RoadTrip roadTripApi) {
+    	api = roadTripApi;
+    }
 }

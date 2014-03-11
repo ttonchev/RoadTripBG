@@ -11,5 +11,7 @@
 			<attribute name="optional" value="true"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="libs/gson-2.2.4.jar"/>
+	<classpathentry kind="lib" path="libs/retrofit-1.2.2.jar"/>
 	<classpathentry kind="output" path="bin/classes"/>
 </classpath>
