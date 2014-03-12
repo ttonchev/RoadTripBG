@@ -9,6 +9,7 @@ import java.util.List;
 
 import com.roadtrip.bg.dto.BuyerObject;
 import com.roadtrip.bg.dto.BuyerTotal;
+import com.roadtrip.bg.dto.City;
 import com.roadtrip.bg.dto.Order;
 import com.roadtrip.bg.dto.SiteItem;
 
@@ -222,17 +223,20 @@ public class Project {
 		}
 	}
 	
-	public List<String> listAllCities(Connection connection) {
+	public List<City> listAllCities(Connection connection) {
 		
 			try {
 				connection.setAutoCommit(false);
-				PreparedStatement ps = connection.prepareStatement("Select * from cities");
+				PreparedStatement ps = connection.prepareStatement("Select id, name from cities");
 				ResultSet rs = ps.executeQuery();
-				List<String> result = new ArrayList<String>();
+				List<City> cities = new ArrayList<City>();
 				while (rs.next()) {
-					result.add(rs.getString(2));
+					City city = new City();
+					city.setId(rs.getString("id"));
+					city.setName(rs.getString("name"));
+					cities.add(city);
 				}
-				return result;
+				return cities;
 			} catch (SQLException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();

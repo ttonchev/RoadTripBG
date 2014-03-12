@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.roadtripbg.R;
+import com.roadtripbg.http.City;
+
 import android.app.Activity;
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -61,7 +63,7 @@ public class CityListAdapter extends BaseAdapter {
 
 		CityHolder holder = (CityHolder) row.getTag();
 		City city = mCities.get(position);
-		holder.name.setText(city.getCityName());
+		holder.name.setText(city.name);
 
 		return row;
 	}

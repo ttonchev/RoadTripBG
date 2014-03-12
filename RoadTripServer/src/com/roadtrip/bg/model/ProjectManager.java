@@ -8,6 +8,7 @@ import com.roadtrip.bg.dao.Database;
 import com.roadtrip.bg.dao.Project;
 import com.roadtrip.bg.dto.BuyerObject;
 import com.roadtrip.bg.dto.BuyerTotal;
+import com.roadtrip.bg.dto.City;
 import com.roadtrip.bg.dto.Order;
 import com.roadtrip.bg.dto.SiteItem;
 
@@ -108,11 +109,11 @@ public class ProjectManager {
 		}
 	}
 	
-	public List<String> getAllCities() throws Exception {
+	public List<City> getAllCities() throws Exception {
 		Database database = new Database();
 		Connection conn = database.getConnection();
 		Project project = new Project();
-		List<String> cities = project.listAllCities(conn);
+		List<City> cities = project.listAllCities(conn);
 		return cities;
 	}
 }

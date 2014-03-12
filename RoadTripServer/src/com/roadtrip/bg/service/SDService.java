@@ -11,6 +11,7 @@ import javax.ws.rs.Produces;
 import com.google.gson.Gson;
 import com.roadtrip.bg.dto.BuyerObject;
 import com.roadtrip.bg.dto.BuyerTotal;
+import com.roadtrip.bg.dto.City;
 import com.roadtrip.bg.dto.Order;
 import com.roadtrip.bg.dto.SiteItem;
 import com.roadtrip.bg.model.ProjectManager;
@@ -149,7 +150,7 @@ public class SDService {
 		ProjectManager projectManager = new ProjectManager();
 		
 		String ordersJSON = null;
-		List<String> cities;
+		List<City> cities;
 		try {
 			cities = projectManager.getAllCities();
 			Gson gson = new Gson();
